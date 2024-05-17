@@ -1,0 +1,18 @@
+{
+    "name": "scriptbaker/magento2-ship-out-of-stock-items",
+    "description": "This Magento 2 module allows the creation of shipments for orders containing items that are out of stock. In default Magento, attempting to create a shipment for an order with out-of-stock items results in the error: \"Not all of your products are available in the requested quantity.\" This module remedies that problem by adjusting the stock quantities to ensure the shipment can be processed.",
+	"version": "1.0.0",
+    "type": "magento2-module",
+    "require": {
+        "magento/framework": ">=103",
+        "php": "^7.1|^8.0"
+    },
+    "autoload": {
+        "files": [
+            "src/registration.php"
+        ],
+        "psr-4": {
+            "Scriptbaker\\ShipOutofStockItems\\": "src"
+        }
+    }   
+}
